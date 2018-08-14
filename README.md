@@ -8,6 +8,7 @@ An example of UCSC genome browser session as follows.
 Step1: Format the data set. covert your file to bigWig file by utilities. For example wigToBigWig.
 Step2: Move the newly created bigWig file to a web-accessible http, https, or ftp location. For example github.
        2.1 The file name must ends with a appropriate suffix(.bw).
+       2.2 Github supports byte-range access to files when they are accessed via the raw.githubusercontent.com style URLs.To obtain a raw URL to a file already uploaded on Github, click on a file in your repository and click the Raw button. URL will be shown above.
 Step3: 3.1 Goto https://genome.ucsc.edu/index.html, the "Custom Tracks" will be listed in the "My Data". To load a new custom track into the currently displayed track set, click the "add custom tracks" button.
        3.2 Construct a custome track using a single track line. The most basic version of the track line will look something like this:
            track type=bigWig name="My Big Wig" description="A Graph of Data from My Lab" bigDataUrl=http://myorg.edu/mylab/myBigWig.bw
